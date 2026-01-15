@@ -12,17 +12,38 @@ const photos = [
   "images/shop/shop9.png",
   "images/shop/shop10.png"
 ]
+
+const youphotos = [
+  'images/youtube/youtube1.png',
+  'images/youtube/youtube2.png',
+  'images/youtube/youtube3.png',
+  'images/youtube/youtube4.png',
+  'images/youtube/youtube5.png',
+  'images/youtube/youtube6.png',
+  'images/youtube/youtube7.png',
+]
 const Projects = () => {
 
     const [index, setIndex] = useState(0);
 
+    const [index2, setIndex2] = useState(0)
+
     const nextPhoto = () => {
     setIndex((prev) => (prev + 1) % photos.length);
-  };
+    }
 
-  const prevPhoto = () => {
-    setIndex((prev) => (prev - 1 + photos.length) % photos.length);
-  }
+    const nextPhoto2 = () => {
+    setIndex2((prev) => (prev + 1) % youphotos.length);
+    }
+
+
+    const prevPhoto = () => {
+      setIndex((prev) => (prev - 1 + photos.length) % photos.length);
+    }
+
+    const prevPhoto2 = () => {
+      setIndex2((prev) => (prev - 1 + youphotos.length) % youphotos.length);
+    }
   return (
     <div id="projects" className="projects bg-[#121F28] w-full text-white px-4 lg:px-10">
       <h1 className="text-4xl lg:text-5xl text-center pb-16 font-semibold">Projects</h1>
@@ -62,8 +83,8 @@ const Projects = () => {
           <div className="flex flex-col items-center gap-2">
             <img src={photos[index]} alt="preview" className="h-64 rounded"/>
             <div className="flex gap-4">
-                <button className="bg-blue-500 px-5 py-1 rounded-2xl" onClick={prevPhoto}>Prev</button>
-                <button className="bg-blue-500 px-5 py-1 rounded-2xl" onClick={nextPhoto}>Next</button>
+                <button className="bg-blue-500 px-5 rounded-2xl" onClick={prevPhoto}>Prev</button>
+                <button className="bg-blue-500 px-5 rounded-2xl" onClick={nextPhoto}>Next</button>
             </div>
           </div>
         </div>
@@ -75,10 +96,10 @@ const Projects = () => {
 
         <div className="w-full lg:w-[500px] border border-white rounded-xl flex justify-center p-2">
           <div className="flex flex-col items-center gap-2">
-            <img src={photos[index]} alt="preview" className="h-64 rounded"/>
+            <img src={youphotos[index2]} alt="preview" className="h-64 rounded"/>
             <div className="flex gap-4">
-                <button className="bg-blue-500 px-5 py-1 rounded-2xl" onClick={prevPhoto}>Prev</button>
-                <button className="bg-blue-500 px-5 py-1 rounded-2xl" onClick={nextPhoto}>Next</button>
+                <button className="bg-blue-500 px-5 rounded-2xl" onClick={prevPhoto2}>Prev</button>
+                <button className="bg-blue-500 px-5 rounded-2xl" onClick={nextPhoto2}>Next</button>
             </div>
         </div>
         </div>
