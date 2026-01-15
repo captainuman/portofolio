@@ -22,20 +22,35 @@ const youphotos = [
   'images/youtube/youtube6.png',
   'images/youtube/youtube7.png',
 ]
+
+const mac = [
+'images/macbook/mac1.png',
+'images/macbook/mac2.png',
+'images/macbook/mac3.png',
+'images/macbook/mac4.png',
+'images/macbook/mac5.png',
+'images/macbook/mac6.png',
+'images/macbook/mac7.png',
+'images/macbook/mac8.png',
+]
+
 const Projects = () => {
 
     const [index, setIndex] = useState(0);
-
     const [index2, setIndex2] = useState(0)
+    const [index3, setIndex3] = useState(0)
 
     const nextPhoto = () => {
     setIndex((prev) => (prev + 1) % photos.length);
     }
-
+  
     const nextPhoto2 = () => {
     setIndex2((prev) => (prev + 1) % youphotos.length);
     }
 
+    const nextPhoto3 = () => {
+    setIndex3((prev) => (prev + 1) % mac.length);
+    }
 
     const prevPhoto = () => {
       setIndex((prev) => (prev - 1 + photos.length) % photos.length);
@@ -43,6 +58,10 @@ const Projects = () => {
 
     const prevPhoto2 = () => {
       setIndex2((prev) => (prev - 1 + youphotos.length) % youphotos.length);
+    }
+
+    const prevPhoto3 = () => {
+      setIndex3((prev) => (prev - 1 + mac.length) % mac.length);
     }
   return (
     <div id="projects" className="projects bg-[#121F28] w-full text-white px-4 lg:px-10">
@@ -126,6 +145,45 @@ const Projects = () => {
             <a href="https://github.com/captainuman/Youtube-front-end-Clone" target="_blank" className="border-2 border-white bg-orange-800 px-5 py-1 rounded">View GitHub</a>
             <a href="https://youtube-front-end-clone.vercel.app/" target="_blank" className="border-2 border-white px-5 py-1 rounded"> View Project </a>
           </div>
+        </div>
+      </div>
+
+      <hr className="border-gray-600" />
+      
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-10 py-20">
+
+        <div className="w-full lg:w-[600px]">
+          <h1 className="text-[#2E466C] font-semibold">Featured project</h1>
+          <h1 className="text-2xl lg:text-3xl">MacBook 14-16 UI </h1>
+
+          <div className="flex flex-wrap gap-3 mt-3">
+            <span className="bg-gray-700 px-4 py-1 rounded-full font-semibold">
+                React </span>
+            <span className="bg-gray-700 px-4 py-1 rounded-full font-semibold">
+                Three js</span>
+            <span className="bg-gray-700 px-4 py-1 rounded-full font-semibold"> G-sap </span>
+          </div>
+
+          <p className="bg-[#111A28] p-5 rounded-xl mt-5 text-sm lg:text-base">
+            React | JavaScript | Threejs – Built a responsive YouTube UI
+            clone with reusable components, structured layout, and clean
+            navigation flow.
+          </p>
+
+          <div className="flex flex-wrap gap-4 mt-5">
+            <a href="https://github.com/captainuman/gasp_macbook_landing.git" target="_blank" className="border-2 border-white bg-orange-800 px-5 py-1 rounded">View GitHub</a>
+            <a href="https://gasp-macbook2211.vercel.app/" target="_blank" className="border-2 border-white px-5 py-1 rounded"> View Project </a>
+          </div>
+        </div>
+
+        <div className="w-full lg:w-[500px] border border-white rounded-xl flex justify-center p-2">
+          <div className="flex flex-col items-center gap-2">
+            <img src={mac[index3]} alt="preview" className="h-64 rounded"/>
+            <div className="flex gap-4">
+                <button className="bg-blue-500 px-5 rounded-2xl" onClick={prevPhoto3}>Prev</button>
+                <button className="bg-blue-500 px-5 rounded-2xl" onClick={nextPhoto3}>Next</button>
+            </div>
+        </div>
         </div>
       </div>
     </div>
