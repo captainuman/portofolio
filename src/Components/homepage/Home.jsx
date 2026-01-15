@@ -13,7 +13,8 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl font-bold mt-1">Frontend Developer</h1>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-8">
-            <button className="bg-orange-600 rounded font-semibold px-5 py-2">My Resume</button>
+            <a href="/resume/myresume.pdf" target="_blank" rel="noopener noreferrer" className="px-5 py-2 bg-orange-600 text-white rounded">
+            View Resume</a>
             <a href="https://github.com/captainuman" target="_blank" rel="noopener noreferrer"
               className="border-2 border-orange-600 rounded font-semibold px-5 py-2">
               GitHub</a>
