@@ -5,7 +5,7 @@ const Home = () => {
     <div className="w-full bg-[#121F28] h-screen">
       <Navbar />
 
-      <div id="home" className="text-white flex flex-col-reverse md:flex-row items-center justify-between px-10 md:px-20 py-10 gap-10">
+      <div id="home" className="text-white flex flex-col-reverse md:flex-row items-center justify-around px-10 md:px-20 py-10 gap-10">
         
         <div className="text-center md:text-left">
           <h1 className="text-2xl md:text-3xl font-semibold mb-3">Hello</h1>
@@ -23,7 +23,7 @@ const Home = () => {
         </div>
 
         <div className="flex justify-center">
-          <img  src="images/numanpic.png" alt="Numan" className="w-48 sm:w-60 md:w-72 lg:w-80 rounded-full opacity-90 shadow-[0_0_90px_rgba(120,30,50,0.6)]" />
+          <img  src="images/numanpic.png" alt="Numan" className="w-48 sm:w-60 md:w-72 lg:w-80 rounded-full opacity-90 shadow-[0_0_90px_rgba(120,30,50,0.8)]" />
         </div>
       </div>  
     </div>

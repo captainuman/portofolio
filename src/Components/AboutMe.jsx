@@ -7,7 +7,7 @@ const AboutMe = () => {
         About Me
       </h1>
 
-      <div className="flex flex-col lg:flex-row gap-12 mt-10">
+      <div className="flex flex-col lg:flex-row gap-5 mt-10">
 
         <div className="w-full lg:w-[1300px] py-10 lg:pl-20 flex flex-row">
           <div>
