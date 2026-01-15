@@ -9,7 +9,7 @@ const AboutMe = () => {
 
       <div className="flex flex-col lg:flex-row gap-5 mt-10">
 
-        <div className="w-full lg:w-[1300px] py-10 lg:pl-20 flex flex-row lg:flex-col">
+        <div className="w-full lg:w-325 py-10 lg:pl-20 flex flex-row justify-around lg:flex-col">
           <div>
             <h2 className="text-2xl lg:text-3xl text-orange-500 font-bold"> Education </h2>
             <p className="mt-4">
@@ -27,11 +27,11 @@ const AboutMe = () => {
               2019–2021 | Percentage (72.8%) </p>
           </div>
 
-          <div className="lg:mt-0">
+          <div className="lg:mt-10">
             <h2 className="text-2xl lg:text-3xl text-orange-500 font-bold">
               Core compentencies
             </h2>
-            <div className="space-y-1 lg:text-left">
+            <div className="space-y-1 lg:text-left ">
               <p>Component-based UI Development</p>
               <p>Responsive Design</p>
               <p>Debugging and Problem Solving</p>

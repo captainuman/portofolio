@@ -2,7 +2,7 @@ import Navbar from './Navbar'
 
 const Home = () => {
   return (
-    <div className="w-full bg-[#121F28] h-screen">
+    <div className="w-full bg-[#121F28] ">
       <Navbar />
 
       <div id="home" className="text-white flex flex-col-reverse md:flex-row items-center justify-around px-10 md:px-20 py-10 gap-10">
