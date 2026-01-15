@@ -9,7 +9,7 @@ const AboutMe = () => {
 
       <div className="flex flex-col lg:flex-row gap-5 mt-10">
 
-        <div className="w-full lg:w-325 py-10 lg:pl-20 flex flex-row justify-around lg:flex-col">
+        <div className="w-full lg:w-325 py-10 lg:pl-20 flex flex-row justify-around lg:fl ">
           <div>
             <h2 className="text-2xl lg:text-3xl text-orange-500 font-bold"> Education </h2>
             <p className="mt-4">
@@ -70,9 +70,7 @@ const AboutMe = () => {
             ))}
           </ul>
 
-          <button className="bg-orange-500 px-6 py-2 mt-6 rounded font-bold">
-            Download CV
-          </button>
+          <a href="/resume/myresume.pdf" download="Numan_Resume.pdf" className="px-6 py-3 bg-orange-600 text-white rounded mt-5">Download Resume</a>
         </div>
       </div>
     </div>
