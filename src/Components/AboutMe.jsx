@@ -9,7 +9,7 @@ const AboutMe = () => {
 
       <div className="flex flex-col lg:flex-row gap-5 mt-10">
 
-        <div className="w-full lg:w-325 py-10 lg:pl-20 flex flex-row justify-around lg:fl ">
+        <div className="w-full lg:w-325 py-10 lg:pl-20 flex flex-row justify-around lg:flex-col">
           <div>
             <h2 className="text-2xl lg:text-3xl text-orange-500 font-bold"> Education </h2>
             <p className="mt-4">
