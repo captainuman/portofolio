@@ -18,8 +18,8 @@ const Home = () => {
             <a href="https://github.com/captainuman" target="_blank" rel="noopener noreferrer"
               className="border-2 border-orange-600 rounded font-semibold px-5 py-2">
               GitHub</a>
-            <button className="border-2 border-orange-600 rounded font-semibold px-5 py-2">
-              LinkedIn</button>
+          <a href="https://www.linkedin.com/in/numan2211" target='_blank' rel='noopener noreferrer ' className="border-2 border-orange-600 rounded font-semibold px-5 py-2">LinkedIn</a>
+              
           </div>
         </div>
 

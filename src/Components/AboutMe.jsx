@@ -31,7 +31,7 @@ const AboutMe = () => {
             <h2 className="text-2xl lg:text-3xl text-orange-500 font-bold">
               Core compentencies
             </h2>
-            <div className="space-y-1 lg:text-left ">
+            <div className="space-y-1 lg:text-left mt-2">
               <p>Component-based UI Development</p>
               <p>Responsive Design</p>
               <p>Debugging and Problem Solving</p>
@@ -44,7 +44,8 @@ const AboutMe = () => {
           <h2 className="text-2xl lg:text-3xl text-orange-500 font-bold">Frontend Developer</h2>
 
           <p className="py-8 text-center max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum minus magnam voluptatem, atque corporis quaerat odit illo quos quasi, maxime laudantium a! Sit nulla sequi dignissimos. Aliquam, expedita! Quasi nisi possimus odit, porro inventore laborum nesciunt quos necessitatibus ratione ipsam, nostrum blanditiis voluptas! Officia necessitatibus corporis aut, consequatur placeat quia?
+            React Frontend Developer with strong JavaScript fundamentals and hands-on experience building responsive, component-driven web applications using React and Tailwind CSS. Comfortable integrating
+            REST APIs, working with cloud-deployed backends, and writing clean, maintainable code. Seeking a frontend role focused on real-world problem solving and product quality.
           </p>
 
           <ul className="flex flex-wrap justify-center p-5 bg-gray-800 rounded-2xl gap-3">
